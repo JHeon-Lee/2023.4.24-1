@@ -43,6 +43,10 @@ class cSword : public cWeapon // 자식 클래스 : 부모 클래스
 public:
     //int GetTest() { return m_nTest; } 불가능
     //void SetTest(int test) { m_nTest = test; } 불가능 ---> m_nTest는 부모 클래스의 private
+    //int GetAttDamage() { return m_nAttDamage; } 가능
+    //void SetAttDamage(int attDamage) { m_nAttDamage = attDamage; } 가능
+    //int GetDurability() { return m_nDurability; } 가능
+    //void SetDurability(int durability) { m_nDurability = durability; } 가능 ---> protected 인자들은 자식클래스에서 액세스 가능
     void Attack() override // 재정의 했다는 표시
     {
         cout << "칼로 공격!!" << endl;
